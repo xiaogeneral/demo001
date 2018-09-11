@@ -17,7 +17,10 @@
       },
       methods: {
         test() {},
-        testMaster() {}
+        testMaster() {},
+        cancelHandle() {
+          console.log('cancel----')
+        }
       }
     }
 </script>
