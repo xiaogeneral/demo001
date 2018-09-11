@@ -16,7 +16,8 @@
         }
       },
       methods: {
-        test() {}
+        test() {},
+        handleClick() {}
       }
     }
 </script>
