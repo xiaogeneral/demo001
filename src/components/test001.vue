@@ -14,6 +14,9 @@
           name: 'xiaojiang',
           top: 'what'
         }
+      },
+      methods: {
+        test() {}
       }
     }
 </script>
