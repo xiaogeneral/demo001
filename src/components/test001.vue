@@ -16,7 +16,8 @@
         }
       },
       methods: {
-        test() {}
+        test() {},
+        testMaster() {}
       }
     }
 </script>
