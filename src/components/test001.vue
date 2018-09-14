@@ -1,7 +1,10 @@
 <template>
     <div class="main">
-      <h3>{{name}}</h3>
-      <h4>{{top}}</h4>
+      <div class="slide"
+           :style="{'left': left}"
+           @touchstart="touchStartHandle"
+           @touchmove="touchMoveHandle"
+           @touchend="TouchEndHandle"></div>
     </div>
 </template>
 
@@ -10,21 +13,37 @@
       name: "test001",
       data() {
         return {
-          list: null,
-          name: 'xiaojiang',
-          top: 'what'
+          left: 0
         }
       },
       methods: {
-        test() {},
-        testMaster() {},
-        cancelHandle() {
-          console.log('cancel----')
+        touchStartHandle(e) {
+          const point = e.touches[0];
+          this.pointX = point.pageX;
+          this.distX = 0;
+          console.log('start', this.pointX)
+        },
+        touchMoveHandle(e) {
+          console.log('-----', e);
+          e.preventDefault();
+          const point = e.touches[0];
+          let deltaX = point.pageX - this.pointX;
+          this.left = deltaX + 'px';
+          // this.pointX = point.pageX;
+          console.log('move', this.pointX)
+        },
+        TouchEndHandle() {
+
         }
       }
     }
 </script>
 
 <style scoped>
-
+  .slide {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background-color: cadetblue;
+  }
 </style>
