@@ -80,6 +80,8 @@
         </a>
       </li>
     </ul>
+    <cube-button>Button</cube-button>
+    <cube-button @click="showDatePicker">Date Picker</cube-button>
   </div>
 </template>
 
@@ -90,6 +92,22 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  methods: {
+    showDatePicker() {
+      if (!this.datePicker) {
+        this.datePicker = this.$createDatePicker({
+          title: 'Date Picker',
+          min: new Date(2008, 7, 8),
+          max: new Date(2020, 9, 20),
+          value: new Date(),
+          onSelect: this.selectHandle,
+          onCancel: this.cancelHandle
+        })
+      }
+
+      this.datePicker.show()
+    },
   }
 }
 </script>
