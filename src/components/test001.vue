@@ -40,7 +40,9 @@
         addOne() {
           console.log(12)
         },
-        addTwo() {}
+        addTwo() {
+          console.log(22)
+        }
       }
     }
 </script>
