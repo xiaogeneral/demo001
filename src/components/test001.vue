@@ -37,8 +37,12 @@
         TouchEndHandle() {
 
         },
-        addOne() {},
-        addTwo() {}
+        addOne() {
+          console.log(12)
+        },
+        addTwo() {
+          console.log(22)
+        }
       }
     }
 </script>
