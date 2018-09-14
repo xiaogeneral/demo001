@@ -4,7 +4,9 @@
            :style="{'left': left}"
            @touchstart="touchStartHandle"
            @touchmove="touchMoveHandle"
-           @touchend="TouchEndHandle"></div>
+           @touchend="TouchEndHandle">
+      </div>
+      <h3>test</h3>
     </div>
 </template>
 
