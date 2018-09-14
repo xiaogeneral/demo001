@@ -36,7 +36,9 @@
         },
         TouchEndHandle() {
 
-        }
+        },
+        addOne() {},
+        addTwo() {}
       }
     }
 </script>
