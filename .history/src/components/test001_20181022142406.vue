@@ -35,7 +35,7 @@
           console.log('move', this.pointX)
         },
         TouchEndHandle() {
-            console.log('has add')
+          console.log(123)
         },
         addOne() {
           console.log(12)
