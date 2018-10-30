@@ -42,6 +42,7 @@
         },
         addTwo() {
           console.log(22)
+          console.log('lalala')
         }
       }
     }
