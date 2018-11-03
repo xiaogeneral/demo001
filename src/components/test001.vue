@@ -6,7 +6,7 @@
            @touchmove="touchMoveHandle"
            @touchend="TouchEndHandle">
       </div>
-      <h3>test</h3>
+      <h3>testhahaha</h3>
     </div>
 </template>
 
