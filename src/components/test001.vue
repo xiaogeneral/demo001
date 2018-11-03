@@ -39,6 +39,7 @@
         },
         addOne() {
           console.log(12)
+          console.log('lalala')
         },
         addTwo() {
           console.log(22)
